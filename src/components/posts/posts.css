@@ -1,0 +1,14 @@
+.posts{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.innerpost{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin:4px;
+}
+

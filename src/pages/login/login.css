@@ -1,0 +1,95 @@
+.image {
+  /* the magic */
+  display: block;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  -webkit-border-radius: 180px;
+  -moz-border-radius: 180px;
+  -ms-border-radius: 180px;
+  -o-border-radius: 180px;
+  border-radius: 180px;
+  /* the rest */
+  position: relative; /* for the overlay later */
+  margin: 0px auto;
+  text-align: center;
+  margin: 10px;
+  border: 3px solid #FFF;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),inset 0px 3px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3),inset 0px 3px 8px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),inset 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  /* make resized images look good in IE */
+  -ms-interpolation-mode: bicubic;
+}
+
+body {
+  font: 300 16px/1.5 Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+/* here's a hover overlay, in case you want that */
+.image span {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #888;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  padding: 3em 1em 0;
+}
+
+.image:hover span {
+  display: block;
+}
+
+
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/7267598/pexels-photo-7267598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+}
+
+.loginTitle {
+  font-size: 50px;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: lightcoral;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+

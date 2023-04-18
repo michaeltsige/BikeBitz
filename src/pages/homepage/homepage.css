@@ -1,0 +1,5 @@
+.home {
+  display: flex;
+  background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(7,6,92,1) 23%, rgba(20,20,134,0.9556197478991597) 46%, rgba(4,109,187,1) 72%);
+}

@@ -1,0 +1,87 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(134, 56, 56, 0.2);
+    max-width: 200px;
+    max-height: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 15px;
+}
+
+  
+.title {
+    color: grey;
+    font-size: 18px;
+}
+  
+.rent-button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 5px;
+  max-width: 100%;
+  min-width: 100%;
+  margin-top: 5px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    padding: 10px;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  
+  img {
+    width:100%;
+  }
+  
+  .t2 { 
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    border-top: solid 1px #a7a4a4;
+    border-bottom: solid 1px #a7a4a4;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #222222;
+    font-weight: 600;
+  }
+
+.t1 { 
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  width: 90%;
+  border-top: solid 1px #a7a4a4;
+  border-bottom: solid 1px #a7a4a4;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #222222;
+  font-weight: 600; 
+  
+}

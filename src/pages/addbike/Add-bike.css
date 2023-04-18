@@ -1,0 +1,80 @@
+.bg {
+  background: radial-gradient(#45657B, #102A3A) repeat; 
+  height: 560px;
+}
+
+.bike {
+  padding-top: 50px;
+  border-radius: 12px;
+}
+
+.bikeImg {
+  margin-right: 130px;
+  width: 75vw;
+  height: 275px;
+  border-radius: 10px;
+  object-fit: cover;
+  padding-bottom: 20px;
+}
+
+.bikeForm {
+  position: relative;
+}
+
+.bikeFormGroup {
+  margin-left: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.bikeIcon {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 50%;
+  color: rgb(129, 125, 125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bikeInput {
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  width: 70vw;
+  border-radius: 12px;
+}
+
+.bikeInput::placeholder {
+  color: rgb(189, 185, 185);
+  font-weight: 400;
+}
+
+.bikeInput:focus {
+  outline-style: none;
+}
+
+.bikeText {
+  width: 70vw;
+  height: 100vh;
+  font-family: inherit;
+  font-size: 20px;
+}
+
+.bikeSubmit {
+  position: absolute;
+  top: 10px;
+  right: 180px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
