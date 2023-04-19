@@ -1,7 +1,7 @@
 import Topbar from "./components/topbar/Topbar";
 import Homepage from "./pages/homepage/Homepage";
 import Login from "./pages/login/Login";
-import Settings from "./pages/settings/Settings";
+import Accounts from "./pages/settings/Accounts";
 import Single from "./pages/single/Single";
 import AddBike from "./pages/addbike/Add-bike";
 import ContactUs from "./pages/contactus/contactus";
@@ -26,7 +26,7 @@ function App() {
         <Route path="/login" element={users ? <Homepage /> : <UsersContextProvider><Login /></UsersContextProvider>}/>
         <Route path="/post/:id" element={<Single/>} />
         <Route path="/addbike" element={users ? <AddBike /> :<UsersContextProvider><Login /></UsersContextProvider>}/>
-        <Route path="/settings" element={users ? <Settings /> : <Login />}/>
+        <Route path="/accounts" element={users ? <Accounts /> : <Login />}/>
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/about" element={<About />} />
       </Routes>

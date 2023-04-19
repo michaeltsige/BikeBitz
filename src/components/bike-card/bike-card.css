@@ -1,3 +1,22 @@
+:root {
+
+  --input-color: #222222;
+  --input-border: #CDD9ED;
+  --input-background: #fff;
+  --input-placeholder: #171718;
+
+  --input-border-focus: #275EFE;
+
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #EEF4FF;
+
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #678EFE;
+
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(134, 56, 56, 0.2);
     max-width: 200px;
@@ -7,6 +26,33 @@
     font-family: arial;
     border-radius: 15px;
 }
+
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 4px 12px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  transition: border .3s ease;
+}
+.form-field::placeholder {
+      color: var(--input-placeholder);
+      font-family: "Varela Round", sans-serif;
+      text-align: center;
+  }
+.form-field:focus {
+      outline: none;
+      border-color: var(--input-border-focus);
+}
+
 
   
 .title {
@@ -54,21 +100,6 @@
   img {
     width:100%;
   }
-  
-  .t2 { 
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-    width: 90%;
-    border-top: solid 1px #a7a4a4;
-    border-bottom: solid 1px #a7a4a4;
-    text-align: center;
-    font-family: "Varela Round", sans-serif;
-    font-size: 12px;
-    line-height: 15px;
-    color: #222222;
-    font-weight: 600;
-  }
 
 .t1 { 
   align-items: center;
@@ -84,4 +115,19 @@
   color: #222222;
   font-weight: 600; 
   
+}
+
+.rented {
+  align-items: center;
+  margin: 5px;
+  padding: 20px;
+  width: 90%;
+  border-top: solid 1px #a7a4a4;
+  border-bottom: solid 1px #a7a4a4;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 32px;
+  line-height: 15px;
+  color: #222222;
+  font-weight: 600;
 }

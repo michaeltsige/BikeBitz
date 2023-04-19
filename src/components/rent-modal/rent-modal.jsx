@@ -21,16 +21,14 @@ export const RentModal = ({ closeModal }) => {
         <Modal.Title>Rent Bike</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-      <div class="container">
-        <form action="#">
-           
-              <div class="input-data">
-                 <input type="text" required/>
-                 <label for="">First Name</label>
-              
-           </div>
-        </form>
-     </div>
+      <div class="container-form">
+	      <div class="container__item">
+		      <form class="form-style">
+			      <input type="email" class="form" placeholder="Your E-Mail Address" />
+			      <button type="button" class="primary-btn">Send</button>
+		      </form>
+	      </div>
+      </div>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={() => closeModal(false)}>

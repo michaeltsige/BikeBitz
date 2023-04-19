@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import pp from "../../assets/pp.jpg";
 import "./topbar.css";
 
 export default function Topbar() {
@@ -37,15 +38,15 @@ export default function Topbar() {
       </div>
       <div className="topRight">
 
-          <Link className="link" to="/settings">
+          <Link className="link" to="/accounts">
             <img
               className="topImg"
-              src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              src={pp}
               alt=""
             />
           </Link>
 
-        <i className="topSearchIcon fas fa-search"></i>
+        {/* <i className="topSearchIcon fas fa-search"></i> */}
       </div>
     </div>
   );
