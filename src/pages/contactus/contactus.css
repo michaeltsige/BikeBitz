@@ -10,7 +10,7 @@
     background: url("./../../assets/bg.png") no-repeat center center/cover;
 }
 
-.container form{
+.container .contact-form{
     width: 670px;
     height: 400px;
     display: flex;
@@ -22,7 +22,7 @@
     flex-wrap: wrap;
 }
 
-.container form h1{
+.container .contact-form h1{
     color: #fff;
     font-weight: 500;
     margin-top: 20px;
@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-.container form input{
+.container .contact-form input{
     width: 290px;
     height: 40px;
     padding-left: 10px;
@@ -42,23 +42,23 @@
     border-bottom: 2px solid #fff;
 }
 
-.container form input::placeholder{
+.container .contact-form input::placeholder{
     color: #ddd;
 }
 
-.container form #lastName,
-.container form #mobile{
+.container .contact-form #lastName,
+.container .contact-form #mobile{
     margin-left: 20px;
 }
 
-.container form h4{
+.container .contact-form h4{
     color: #fff;
     font-weight: 300;
     width: 600px;
     margin-top: 20px;
 }
 
-.container form textarea{
+.container .contact-form textarea{
     background: none;
     border: none;
     border-bottom: 2px solid #fff;
@@ -81,7 +81,7 @@ textarea::-webkit-scrollbar-thumb{
     background-color: rgba(194,194,194,0.713);
 }
 
-.container form #button{
+.container .contact-form #button{
     border: none;
     background: #fff;
     border-radius: 5px;
@@ -96,6 +96,6 @@ textarea::-webkit-scrollbar-thumb{
     transition: 0.3s;
 }
 
-.container form #button:hover{
+.container .contact-form #button:hover{
     opacity: 0.7;
 }

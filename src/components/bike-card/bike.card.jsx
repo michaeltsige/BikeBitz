@@ -32,7 +32,7 @@ export const BikeCard = (props) => {
           </Button>
         </Card.Body>
       </Card>
-      {showRentModal? (<RentModal show={showRentModal} handleClose={handleRentModalClose} />):(<></>)}
+      {showRentModal? (<RentModal show={showRentModal} closeModal={handleRentModalClose} />):(<></>)}
     </>
   );
 };
