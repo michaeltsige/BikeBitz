@@ -25,8 +25,8 @@ function App() {
         <Route path="/posts" element={<Homepage/>}/> 
         <Route path="/login" element={users ? <Homepage /> : <UsersContextProvider><Login /></UsersContextProvider>}/>
         <Route path="/post/:id" element={<Single/>} />
-        <Route path="/addbike" element={users ? <AddBike /> :<UsersContextProvider><Login /></UsersContextProvider>}/>
-        <Route path="/accounts" element={users ? <Accounts /> : <Login />}/>
+        <Route path="/addbike" element={users ? <AddBike /> : <Login />}/>
+        <Route path="/accounts" element={users ? <Accounts user={users} /> : <Login />}/>
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/about" element={<About />} />
       </Routes>
