@@ -11,7 +11,7 @@ const bicycles = [
       rate : 0.5
     },
     {
-      name: "bike-alpha",
+      name: "bike-omega",
       icon : "https://img.icons8.com/fluency/256/bike-parking.png",
       image : [
           "https://cdn.pixabay.com/photo/2016/11/18/12/49/bicycle-1834265_960_720.jpg"
@@ -22,7 +22,7 @@ const bicycles = [
       rate : 0.5
     },
     {
-      name: "bike-alpha",
+      name: "bike-kappa",
       icon : "https://img.icons8.com/fluency/256/bike-parking.png",
       image : [
           "https://cdn.pixabay.com/photo/2016/11/18/12/49/bicycle-1834265_960_720.jpg"

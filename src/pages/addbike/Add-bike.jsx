@@ -2,32 +2,22 @@ import "./Add-bike.css";
 
 export default function AddBike() {
   return (
-    <div className="bg">
-      <div className="bike">
-        <img
-          className="bikeImg"
-          src="https://images.pexels.com/photos/686230/pexels-photo-686230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-        />
-        <form className="bikeForm">
-          <div className="bikeFormGroup">
-            <label htmlFor="fileInput">
-              <i className="writeIcon fas fa-plus"></i>
-            </label>
-            
-            <input
-              className="bikeInput"
-              placeholder="Rate of Rental"
-              type="number"
-              step="any"
-              min="0"
-              autoFocus={true}
-            />
-          </div>
-          <button className="bikeSubmit" type="submit">
-            Mint
-          </button>
-        </form>
+    <div className="add-bike-body">
+      <div className="add-bike-container">
+        <div className="add-bike-card">
+          <img className="add-bike-img" src="https://cdn.pixabay.com/photo/2016/11/18/12/49/bicycle-1834265_960_720.jpg" alt="Card Image" />
+          <form className="add-bike-form">
+            <div className="input-container">
+              <label htmlFor="rentfee" className="add-bike-label">
+                Rent-Fee:
+              </label>
+              <input type="number" id="rentfee" name="rentfee" className="add-bike-input" />
+              <button type="submit" className="add-bike-button">
+                +
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );

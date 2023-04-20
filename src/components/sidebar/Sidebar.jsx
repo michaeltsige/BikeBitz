@@ -5,7 +5,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT PAGE</span>
+        <span className="sidebarTitle">RENT BIKES</span>
         <img
           src="https://cdn.pixabay.com/photo/2016/11/18/12/49/bicycle-1834265_960_720.jpg"
           alt=""

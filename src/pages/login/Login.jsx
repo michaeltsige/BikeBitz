@@ -3,6 +3,8 @@ import { useState, useContext } from "react";
 import { useNavigate } from 'react-router-dom';
 import React from "react";
 
+import pp from "../../assets/pp.jpg"
+
 import { UsersContext } from "../../helpers/UserContext/UserDataContext";
 
 export default function Login() {
@@ -15,17 +17,20 @@ export default function Login() {
   // }
 
   return (
-    <div className="login">
-      
-      <span className="loginTitle">Connect to Metamask</span>
-      <a href="/settings" class="image">
-        <img 
-          alt="Metamask Logo" 
-          src="https://img.freepik.com/premium-vector/metamask-logo-crypto-wallet-defi-web3-dapps-nfts-isolated-white-background_337410-1911.jpg?w=740"
+    <div className="login-container">
+    <div className="login-card">
+      <h1 className="login-title">Connect to Metamask</h1>
+      <div className="image-container">
+        <img
+          alt="Metamask Logo"
+          src="https://raw.githubusercontent.com/MetaMask/brand-resources/master/SVG/metamask-fox.svg"
         />
-        <span>Metamask Wallet</span>
-      </a>
-        <button className="loginButton" onClick={connectWalletHandler}>Connect</button>
+      </div>
+      <button className="login-button" onClick={connectWalletHandler}>
+        Connect
+      </button>
     </div>
+  </div>  
+
   );
 }

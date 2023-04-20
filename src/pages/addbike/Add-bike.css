@@ -1,80 +1,90 @@
-.bg {
-  background: radial-gradient(#45657B, #102A3A) repeat; 
-  height: 560px;
+.add-bike-body {
+  background: radial-gradient(#45657B, #102A3A) repeat;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #fff;
 }
 
-.bike {
-  padding-top: 50px;
-  border-radius: 12px;
-}
-
-.bikeImg {
-  margin-right: 130px;
-  width: 75vw;
-  height: 275px;
-  border-radius: 10px;
-  object-fit: cover;
-  padding-bottom: 20px;
-}
-
-.bikeForm {
-  position: relative;
-}
-
-.bikeFormGroup {
-  margin-left: 130px;
+.add-bike-container {
   display: flex;
-  align-items: center;
-}
-
-.bikeIcon {
-  width: 25px;
-  height: 25px;
-  font-size: 20px;
-  border: 1px solid;
-  border-radius: 50%;
-  color: rgb(129, 125, 125);
-  display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
-}
-
-.bikeInput {
-  font-size: 30px;
-  border: none;
-  padding: 10px;
-  width: 70vw;
-  border-radius: 12px;
-}
-
-.bikeInput::placeholder {
-  color: rgb(189, 185, 185);
-  font-weight: 400;
-}
-
-.bikeInput:focus {
-  outline-style: none;
-}
-
-.bikeText {
-  width: 70vw;
+  align-items: center;
   height: 100vh;
-  font-family: inherit;
-  font-size: 20px;
 }
 
-.bikeSubmit {
-  position: absolute;
-  top: 10px;
-  right: 180px;
-  color: white;
-  background-color: teal;
-  padding: 10px;
-  border: none;
+.add-bike-card .add-bike-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  color:#fff;
+  margin-bottom: 10px; /* added */
+}
+
+
+.add-bike-card {
+  background-color: #fff;
+  width: 350px;
+  height: 300px;
   border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-bike-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  color: #fff;
+}
+
+.add-bike-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
   display: flex;
   align-items: center;
+}
+
+.add-bike-label {
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #45657B;
+}
+
+.add-bike-input {
+  padding: 10px;
+  font-size: 18px;
+  border: black solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.add-bike-button[type="submit"] {
+  background-color: #fff;
+  color: #45657B;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-bike-button[type="submit"]:hover {
+  transform: scale(1.1);
+  background-color: #45657B;
+  color: #fff;
 }
