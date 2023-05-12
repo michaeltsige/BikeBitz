@@ -9,8 +9,7 @@ import { UsersContext } from "../../helpers/UserContext/UserDataContext";
 
 export default function Login() {
   
-  const { users, setUsers, userBalance, setUserBalance, errorMessage, setErrorMessage, connButtonText, setConnButtonText,
-    connectWalletHandler, accountChangedHandler, getBalance } = useContext(UsersContext);
+  const { connectWalletHandler } = useContext(UsersContext);
 
   // const handleConnection = ()=>{
   //   setUsers(true);

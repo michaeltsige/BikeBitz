@@ -27,12 +27,30 @@
 }
 
 .account-id {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     font-weight: bold;
     margin: 40px;
 }
 
 .account-balance {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #666;
 }
+
+.disconnect-button{
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #0077b6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; */

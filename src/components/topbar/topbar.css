@@ -1,7 +1,7 @@
 .top {
   width: 100%;
   height: 50px;
-  background-color: rgb(53, 70, 146);
+  background-color: rgb(69, 80, 129);
   position: sticky;
   top: 0;
   display: flex;
@@ -61,4 +61,12 @@
   font-size: 18px;
   color: #666;
   cursor: pointer;
+}
+
+.topUserAddr {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  max-width: 200px;
+  
 }

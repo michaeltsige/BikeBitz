@@ -1,7 +1,7 @@
 import Topbar from "./components/topbar/Topbar";
 import Homepage from "./pages/homepage/Homepage";
 import Login from "./pages/login/Login";
-import Accounts from "./pages/settings/Accounts";
+import Accounts from "./pages/settings/accounts";
 import Single from "./pages/single/Single";
 import AddBike from "./pages/addbike/Add-bike";
 import ContactUs from "./pages/contactus/contactus";
@@ -12,10 +12,9 @@ import { useContext } from "react";
 import { UsersContext, UsersContextProvider } from "./helpers/UserContext/UserDataContext";
 
 function App() {
-  let flag;
+  
   const { users } = useContext(UsersContext);
-  console.log(flag)
-  console.log(users);
+  
   return (
     <>
     <Topbar />

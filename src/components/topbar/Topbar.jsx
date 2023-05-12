@@ -2,8 +2,13 @@ import { Link } from "react-router-dom";
 import pp from "../../assets/pp.jpg";
 import "./topbar.css";
 
+import { UsersContext } from "../../helpers/UserContext/UserDataContext";
+import { useContext } from "react";
+
 export default function Topbar() {
-  const user = true;
+  
+  const { users } = useContext(UsersContext);
+
   return (
     <div className="top">
       <div className="topLeft">
@@ -37,16 +42,31 @@ export default function Topbar() {
         </ul>
       </div>
       <div className="topRight">
-
-          <Link className="link" to="/accounts">
+      
+        {users? 
+          (<>
+            <Link className="link" to="/accounts">
+            <img
+              className="topImg"
+              src={pp}
+              alt=""
+            />
+            </Link>
+           <div className="topUserAddr"> <p>{users}</p></div>
+          </>
+          )
+          :
+          (
+            <Link className="link" to="/accounts">
             <img
               className="topImg"
               src={pp}
               alt=""
             />
           </Link>
-
-        {/* <i className="topSearchIcon fas fa-search"></i> */}
+          )
+        }
+        
       </div>
     </div>
   );

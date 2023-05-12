@@ -11,7 +11,7 @@ export default function AddBike() {
               <label htmlFor="rentfee" className="add-bike-label">
                 Rent-Fee:
               </label>
-              <input type="number" id="rentfee" name="rentfee" className="add-bike-input" />
+              <input type="number" step="0.000000000000000001" id="rentfee" name="rentfee" className="add-bike-input" />
               <button type="submit" className="add-bike-button">
                 +
               </button>

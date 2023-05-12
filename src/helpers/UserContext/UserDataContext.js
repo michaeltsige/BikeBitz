@@ -8,6 +8,13 @@ export const UsersContextProvider = ({ children }) => {
   const [userBalance, setUserBalance] = useState(null);
   const [connButtonText, setConnButtonText] = useState('Connect');
 
+
+  const hexToEth = (hex) => {
+    const decimalValue = parseInt(hex, 16);
+    const eths = decimalValue / 1000000000000000000; // 10^18
+    return eths.toString();
+  }
+  
   const connectWalletHandler = () => {
     if(window.ethereum){
         window.ethereum.request({method: 'eth_requestAccounts'})
@@ -27,15 +34,34 @@ export const UsersContextProvider = ({ children }) => {
   const getBalance = (address) => {
     window.ethereum.request({method: 'eth_getBalance', params:[address , 'latest']})
     .then(balance => {
-        setUserBalance(balance);
+        setUserBalance((balance));
     });
   }
+
+  const disconnectWalletHandler = () => {
+    if (window.ethereum) { // check if the user's wallet is connected
+      if (window.ethereum.selectedAddress) { // check if an address is selected
+        // Clear the current provider
+        window.ethereum = null;
+        console.log('Wallet disconnected.');
+      } else {
+        console.log('Wallet is already disconnected.');
+      }
+    } else {
+      console.log('No wallet found.');
+    }
+    
+    
+  }
+
+
+  window.ethereum.on("accountsChanged",accountChangedHandler);
 
   return (
       <UsersContext.Provider
       value={{
         users, setUsers, userBalance, setUserBalance, errorMessage, setErrorMessage, connButtonText, setConnButtonText,
-        connectWalletHandler, accountChangedHandler, getBalance
+        connectWalletHandler, accountChangedHandler, getBalance, disconnectWalletHandler
      }}
         >
       {children}
